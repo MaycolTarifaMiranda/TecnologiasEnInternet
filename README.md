@@ -1,2 +1,1 @@
-# clase-29-09-2026
-esto es para la primera clase de Tecnologías de Internet
+Voy a crear un sitio web de Repuestos de Motos enfocado en mi ciudad. El objetivo es resolver la dificultad que tienen los conductores para encontrar piezas de calidad rápidamente, permitiéndoles ver nuestro catálogo en línea y ponerse en contacto de forma directa para agilizar sus compras
