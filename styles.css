@@ -32,6 +32,7 @@ nav ul {
     margin: 0;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -45,6 +46,9 @@ nav a:hover {
     color: #2ecc71; 
 }
 
+main {
+    padding: 0 15px;
+}
 
 .tarjeta {
     background-color: #ffffff;
