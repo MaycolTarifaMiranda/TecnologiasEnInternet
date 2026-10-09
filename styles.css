@@ -108,3 +108,29 @@ footer {
     color: #6c757d;
     font-size: 0.9em;
 }
+/* ESTO ES TODO DEL MODO OSCURO */
+#botonOscuro {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body.oscuro {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.oscuro .tarjeta {
+    background-color: #2b2b2b;
+    color: #f1f1f1;
+}
+
+body.oscuro .tarjeta h2 {
+    color: #ffffff;
+}
+
+body.oscuro footer {
+    color: #f1f1f1;
+}
