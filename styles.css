@@ -1,136 +1,140 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #e9ecef; 
-    color: #343a40; 
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    overflow-x: hidden;
+  background-color: #e9ecef;
+  color: #343a40;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 header {
-    background-color: #2c3e50; 
-    color: #ffffff;
-    padding: 20px;
-    border-bottom: 4px solid #27ae60; 
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 20px;
+  border-bottom: 4px solid #27ae60;
 }
 
 .marca {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-    color: #2ecc71; 
-    letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #2ecc71;
+  letter-spacing: 1px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 nav a {
-    color: #ced4da; 
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+  display: inline-block;
+  padding: 8px 0;
+  color: #ced4da;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #2ecc71; 
+  color: #2ecc71;
 }
 
 main {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .tarjeta {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
-    border-top: 3px solid #27ae60; 
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-top: 3px solid #27ae60;
 }
 
 .tarjeta h2 {
-    color: #2c3e50; 
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 1.4em;
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.4em;
 }
 
 .lista-modulos {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .modulo-item {
-    background-color: #f8f9fa;
-    border-left: 5px solid #27ae60; 
-    padding: 15px 20px;
-    border-radius: 4px;
-    transition: background-color 0.2s, transform 0.2s;
+  background-color: #f8f9fa;
+  border-left: 5px solid #27ae60;
+  padding: 15px 20px;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
 }
 
 .modulo-item:hover {
-    background-color: #e2e6ea; 
-    transform: translateX(5px); 
+  background-color: #e2e6ea;
+  transform: translateX(5px);
 }
 
 .modulo-item h3 {
-    color: #2c3e50; 
-    margin: 0 0 5px 0;
-    font-size: 1.1em;
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
 }
 
 .modulo-item p {
-    color: #6c757d; 
-    margin: 0;
-    font-size: 0.9em;
+  color: #6c757d;
+  margin: 0;
+  font-size: 0.9em;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    color: #6c757d;
-    font-size: 0.9em;
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-size: 0.9em;
 }
 /* ESTO ES TODO DEL MODO OSCURO */
 #botonOscuro {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-
 body.oscuro {
-    background-color: #121212;
-    color: #f1f1f1;
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
 body.oscuro .tarjeta {
-    background-color: #2b2b2b;
-    color: #f1f1f1;
+  background-color: #2b2b2b;
+  color: #f1f1f1;
 }
 
 body.oscuro .tarjeta h2 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 body.oscuro footer {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
