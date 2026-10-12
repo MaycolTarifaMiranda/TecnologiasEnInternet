@@ -168,3 +168,51 @@ button {
 button:hover {
     background-color: #219150;
 }
+
+
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    .marca {
+        font-size: 21px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 5px 0;
+    }
+
+    nav button {
+        width: 100%;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        padding: 18px;
+        margin: 15px auto;
+    }
+
+    .tarjeta h2 {
+        font-size: 1.25em;
+    }
+
+    .campo input,
+    .campo textarea {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
