@@ -72,48 +72,62 @@ main {
   font-size: 1.4em;
 }
 
-/* .lista-modulos {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.lista-repuestos {
+    padding-left: 20px;
 }
 
-.modulo-item {
-  background-color: #f8f9fa;
-  border-left: 5px solid #27ae60;
-  padding: 15px 20px;
-  border-radius: 4px;
-  transition:
-    background-color 0.2s,
-    transform 0.2s;
+.lista-repuestos li {
+    margin-bottom: 10px;
 }
 
-.modulo-item:hover {
-  background-color: #e2e6ea;
-  transform: translateX(5px);
+#formularioContacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.modulo-item h3 {
-  color: #2c3e50;
-  margin: 0 0 5px 0;
-  font-size: 1.1em;
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.modulo-item p {
-  color: #6c757d;
-  margin: 0;
-  font-size: 0.9em;
-} */
+.campo label {
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #27ae60;
+    outline-offset: 1px;
+}
+
+#respuestaFormulario {
+    font-weight: bold;
+}
+
 
 footer {
-  text-align: center;
-  padding: 20px;
-  color: #6c757d;
-  font-size: 0.9em;
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-size: 0.9em;
 }
+
 /* ESTO ES TODO DEL MODO OSCURO */
 #botonOscuro {
   padding: 8px 12px;
