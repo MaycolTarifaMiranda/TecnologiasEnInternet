@@ -49,6 +49,7 @@ nav a:hover {
   color: #2ecc71;
 }
 
+
 main {
   padding: 0 15px;
 }
@@ -71,7 +72,7 @@ main {
   font-size: 1.4em;
 }
 
-.lista-modulos {
+/* .lista-modulos {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -105,7 +106,7 @@ main {
   color: #6c757d;
   margin: 0;
   font-size: 0.9em;
-}
+} */
 
 footer {
   text-align: center;
@@ -137,4 +138,19 @@ body.oscuro .tarjeta h2 {
 
 body.oscuro footer {
   color: #f1f1f1;
+}
+
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #219150;
 }
