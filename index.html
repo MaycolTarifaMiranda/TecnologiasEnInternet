@@ -1,50 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Repuestos de Motos</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repuestos de Motos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
       <p class="marca">REPUESTOS DE MOTOS</p>
       <nav>
-          <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#repuestos">Repuestos</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-              <li><button id="botonOscuro" onclick="document.body.classList.toggle('oscuro')">Modo oscuro</button></li>
-          </ul>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#repuestos">Repuestos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><button id="botonOscuro" type="button">Modo oscuro</button></li>
+        </ul>
       </nav>
-  </header>
+    </header>
 
-  <main>
-        <section id="inicio" class="tarjeta">
-            <h2>Bienvenido a Repuestos</h2>
-            <p>Tu tienda de confianza para mantener tu moto al máximo rendimiento. Encuentra calidad y velocidad en un solo lugar.</p>
-        </section>
+    <main>
+      <section id="inicio" class="tarjeta">
+        <h2>Bienvenido a Repuestos</h2>
+        <p>
+          Tu tienda de confianza para mantener tu moto al máximo rendimiento.
+          Encuentra calidad y velocidad en un solo lugar.
+        </p>
+      </section>
 
-        <section id="repuestos" class="tarjeta">
-            <h2>Nuestros Repuestos</h2>
-            <ul>
-                <li>Cascos y equipamiento</li>
-                <li>Aceites y lubricantes</li>
-                <li>Llantas y neumáticos</li>
-                <li>Sistema de frenos</li>
-            </ul>
-        </section>
+      <section id="repuestos" class="tarjeta">
+        <h2>Nuestros Repuestos</h2>
+        <ul class="lista-repuestos">
+          <li>Cascos y equipamiento</li>
+          <li>Aceites y lubricantes</li>
+          <li>Llantas y neumáticos</li>
+          <li>Sistema de frenos</li>
+        </ul>
+      </section>
 
-        <section id="contacto" class="tarjeta">
-            <h2>Datos de Contacto</h2>
-            <p>Teléfono: +591 756465465</p>
-            <p>Correo: ventas@motosssss.com</p>
-            <p>Dirección: Av. Ni idea #123</p>
-</section>
+      <section id="contacto" class="tarjeta">
+        <h2>Datos de Contacto</h2>
+        <p>Teléfono: +591 756465465</p>
+        <p>Correo: ventas@motosssss.com</p>
+        <p>Dirección: Av. Ni idea #123</p>
+        <h2>Formulario de Contacto</h2>
+
+        <form id="formularioContacto">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" />
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensajes:</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          </div>
+          <button type="submit">Enviar mensaje XD</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>@ Maycol Tarifa Miranda </p>
+      <p>@ Maycol Tarifa Miranda</p>
     </footer>
-</body>
+  </body>
 </html>
