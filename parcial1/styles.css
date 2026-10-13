@@ -32,3 +32,32 @@ textarea {
     padding: 8px;
     margin-bottom: 10px;
 }
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mensaje {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+footer{
+    text-align: center;
+}
+
+.oculto {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
