@@ -1,47 +1,55 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Floreria Los amantes</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floreria La Orquidea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
     <header id="inicio">
-      <h1>FLORES LOS AMANTES</h1>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#arreglos">Productos</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+        <h1>Floreria La Orquidea</h1>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nuestros arreglos</a>
+            <a href="#">Contacto</a>
+        </nav>
     </header>
 
     <main>
-      <section id="arreglos">
-        <h2>Productos</h2>
-        <p>Presentación del negocio.</p>
-        <ul>
-          <li>Producto 1 - Bs 10</li>
-          <li>Producto 2 - Bs 20</li>
-          <li>Producto 3 - Bs 30</li>
-        </ul>
-      </section>
+        <section id="arreglos">
+            <h2>Nuestros arreglos</h2>
+            <p>Tenemos flores y plantas para regalar en cualquier ocasión especial, especialistas en arreglos para perdón</p>
+            <ul>
+                <li>Ramo de rosas - Bs 60</li>
+                <li>Ramo de girasoles - Bs 35</li>
+                <li>Planta en maceta - Bs 20</li>
+            </ul>
+        </section>
 
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" required />
+        <section id="contacto">
+            <h2>Encarga tus flores</h2>
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo">
+                <label for="detalle">Detalle del pedido:</label>
+                <textarea id="detalle"></textarea>            </form>
 
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" required />
+            <button type="button" id="btn-confirmar">Hacer mi pedido </button>
 
-        <label for="detalle">Detalle del pedido:</label>
-        <textarea id="detalle"></textarea>
-      </section>
+            <p id="mensaje" class="oculto"></p>
+        </section>
     </main>
 
-    <footer>Maycol Tarifa Miranda</footer>
+    <footer>
+        Maycol Tarifa Miranda
+    </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
