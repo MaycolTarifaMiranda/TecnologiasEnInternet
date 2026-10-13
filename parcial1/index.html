@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floreria La Orquidea</title>
+    <title>Florería La Orquídea</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header id="inicio">
-        <h1>Floreria La Orquidea</h1>
+        <h1>Florería La Orquídea</h1>
 
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Nuestros arreglos</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#arreglos">Nuestros arreglos</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main>
         <section id="arreglos">
             <h2>Nuestros arreglos</h2>
-            <p>Tenemos flores y plantas para regalar en cualquier ocasión especial, especialistas en arreglos para perdón</p>
+            <p>Tenemos flores y plantas para regalar en cualquier ocasión especial, especialistas en arreglos para pedir perdón :')</p>
+
             <ul>
                 <li>Ramo de rosas - Bs 60</li>
                 <li>Ramo de girasoles - Bs 35</li>
@@ -32,15 +33,19 @@
 
         <section id="contacto">
             <h2>Encarga tus flores</h2>
-            <form>
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre">
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo">
-                <label for="detalle">Detalle del pedido:</label>
-                <textarea id="detalle"></textarea>            </form>
 
-            <button type="button" id="boton">Hacer mi pedido </button>
+            <form id="formulario">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="detalle">Detalle del pedido:</label>
+                <textarea id="detalle" required></textarea>
+            </form>
+
+            <button type="button" id="boton">Hacer mi pedido</button>
 
             <p id="mensaje" class="oculto"></p>
         </section>
