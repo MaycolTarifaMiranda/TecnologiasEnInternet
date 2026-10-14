@@ -45,7 +45,7 @@
         <p>Dirección: Av. Ni idea #123</p>
         <h2>Formulario de Contacto</h2>
 
-        <form id="formularioContacto" novalidate>
+        <form id="form-pedido" novalidate>
           <div class="campo">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
@@ -55,13 +55,12 @@
             <input type="email" id="correo" name="correo" required />
           </div>
           <div class="campo">
-            <label for="mensaje">Mensajes:</label>
-            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            <label for="mensaje">Tu pedido:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas"></textarea>
           </div>
           <button type="submit">Enviar mensaje XD</button>
         </form>
-        <p id="aviso-contacto" class="aviso"></p>
-        <!-- <p id="respuestaFormulario" aria-live="polite"></p> -->
+        <p id="error-pedido" class="aviso"></p>
       </section>
     </main>
 
