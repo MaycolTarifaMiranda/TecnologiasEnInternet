@@ -9,11 +9,21 @@ const avisoPedido = document.querySelector("#error-pedido");
 function revisarPedido(event) {
     event.preventDefault();
 
-    const nombre = document.querySelector("#nombre").value;
-    const correo = document.querySelector("#correo").value;
+    const nombre = document.querySelector("#nombre").value.trim();
+    const correo = document.querySelector("#correo").value.trim();
 
-    if (nombre === "") {
+    if (nombre === "" && correo === "") {
+        avisoPedido.textContent = "Falta tu nombre y también el correo, caserito.";
+        avisoPedido.classList.add("error");
+        avisoPedido.classList.remove("exito");
+    } 
+    else if (nombre === "") {
         avisoPedido.textContent = "Falta tu nombre, caserito.";
+        avisoPedido.classList.add("error");
+        avisoPedido.classList.remove("exito");
+    } 
+    else if (correo === "") {
+        avisoPedido.textContent = "No escribiste nada en el correo, caserito.";
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     } 
@@ -26,7 +36,7 @@ function revisarPedido(event) {
         avisoPedido.textContent = "Pedido recibido, caserito. Te contactamos cuando nos acordemos :')";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
-        
+
         formulario.reset();
     }
 }
