@@ -80,7 +80,7 @@ main {
     margin-bottom: 10px;
 }
 
-#formularioContacto {
+#form-contacto {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -167,6 +167,21 @@ button {
 
 button:hover {
     background-color: #219150;
+}
+
+.aviso {
+  display: none;
+  margin-top: 14px;
+}
+
+.aviso.error {
+  display: block;
+  color: #b3261e;
+}
+
+.aviso.exito {
+  display: block;
+  color: #1a7f4f;
 }
 
 
