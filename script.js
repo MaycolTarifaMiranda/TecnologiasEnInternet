@@ -23,7 +23,7 @@ function revisarPedido(event) {
         avisoPedido.classList.remove("exito");
     } 
     else {
-        avisoPedido.textContent = "Pedido recibido, caserito. Te contactamos hoy.";
+        avisoPedido.textContent = "Pedido recibido, caserito. Te contactamos cuando nos acordemos :')";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
         
