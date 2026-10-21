@@ -1,0 +1,36 @@
+const botonOscuro = document.querySelector("#botonOscuro");
+if (botonOscuro) {
+  botonOscuro.addEventListener("click", function () {
+    document.body.classList.toggle("oscuro");
+  });
+}
+
+const formulario = document.querySelector("#form-turno");
+const avisoTurno = document.querySelector("#aviso-turno");
+
+function revisarTurno(event) {
+  const nombre = document.querySelector("#nombre").value.trim();
+  const correo = document.querySelector("#correo").value.trim();
+
+  if (nombre === "" || correo === "") {
+    event.preventDefault();
+    avisoTurno.textContent =
+      "Nos falta tu nombre y tu correo para darte el turno.";
+    avisoTurno.classList.add("error");
+    avisoTurno.classList.remove("exito");
+  } else if (correo.includes("@") === false) {
+    event.preventDefault();
+    avisoTurno.textContent = "Revisa tu correo - le falta el arroba.";
+    avisoTurno.classList.add("error");
+    avisoTurno.classList.remove("exito");
+  } else {
+    avisoTurno.textContent =
+      "Turno reservado - te atiende Maycol Tarifa Miranda";
+    avisoTurno.classList.add("exito");
+    avisoTurno.classList.remove("error");
+  }
+}
+
+if (formulario) {
+  formulario.addEventListener("submit", revisarTurno);
+}

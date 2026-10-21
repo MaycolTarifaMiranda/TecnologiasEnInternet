@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f8f4;
+  color: #2d3a2e;
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #1f3d2b;
+  color: #ffffff;
+  padding: 20px;
+  border-bottom: 4px solid #4caf7d;
+}
+
+.marca {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  color: #b6e3c8;
+  letter-spacing: 3px;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.presentacion {
+  margin: 0 0 15px 0;
+  color: #d5e8db;
+  max-width: 640px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 0;
+  color: #c8e3d4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7fe0a4;
+}
+
+main {
+  padding: 0 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  border-top: 4px solid #4caf7d;
+}
+
+.tarjeta h2 {
+  color: #1f3d2b;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.tarjeta h3 {
+  color: #1f3d2b;
+  margin-top: 22px;
+  margin-bottom: 14px;
+  font-size: 1.15em;
+}
+
+.lista-servicios {
+  padding-left: 20px;
+}
+
+.lista-servicios li {
+  margin-bottom: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #d9ead9;
+}
+
+#form-turno {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.campo label {
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b8d4c0;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #fafffb;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: 2px solid #4caf7d;
+  outline-offset: 1px;
+}
+
+.aviso {
+  display: none;
+  margin-top: 18px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.aviso.error {
+  display: block;
+  color: #a02020;
+  background-color: #ffe6e6;
+  border-left: 5px solid #d43c3c;
+}
+
+.aviso.exito {
+  display: block;
+  color: #1b7f3b;
+  background-color: #e6f8ec;
+  border-left: 5px solid #2eb85c;
+}
+
+button {
+  background-color: #4caf7d;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3a8f63;
+}
+
+.boton-volver {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+.firma {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 2px solid #4caf7d;
+  font-weight: bold;
+  color: #1f3d2b;
+}
+
+#botonOscuro {
+  padding: 8px 12px;
+  background-color: #3a8f63;
+}
+
+body.oscuro {
+  background-color: #121812;
+  color: #e6f2ea;
+}
+
+body.oscuro .tarjeta {
+  background-color: #1e2b22;
+  color: #e6f2ea;
+}
+
+body.oscuro .tarjeta h2 {
+  color: #a8e6bf;
+}
+
+body.oscuro .tarjeta h3 {
+  color: #a8e6bf;
+}
+
+body.oscuro .campo input,
+body.oscuro .campo textarea {
+  background-color: #16211b;
+  color: #e6f2ea;
+  border-color: #3a8f63;
+}
+
+body.oscuro .campo label {
+  color: #a8e6bf;
+}
+
+body.oscuro .lista-servicios li {
+  border-bottom-color: #2f4a38;
+}
+
+body.oscuro footer {
+  color: #c8e3d4;
+}
+
+body.oscuro .firma {
+  color: #a8e6bf;
+  border-top-color: #4caf7d;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  nav button {
+    width: 100%;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .tarjeta {
+    padding: 18px;
+    margin: 15px auto;
+  }
+
+  .tarjeta h2 {
+    font-size: 1.2em;
+  }
+}
